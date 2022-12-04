@@ -1,0 +1,45 @@
+/*******************Tagging Style*******************/
+body {
+    background-image: url("assets/home/background-home-desktop.jpg");
+}
+h1 {
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    font-weight: normal;
+    color: #ffff;
+}
+h2 {
+    font-family: 'Bellefair', serif;
+    font-size: 100px;
+}
+h3 {
+    font-family: 'Bellefair', serif;
+    font-size: 56px;
+}
+h4 {
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+}
+h5 {
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+    letter-spacing: 4,75;
+    text-transform: uppercase;
+}
+/*******************Class Style*******************/
+.Sub-heading-1 {
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+}
+.Sub-heading-2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2,35;
+}
+.Sub-heading-3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2,7;
+}
