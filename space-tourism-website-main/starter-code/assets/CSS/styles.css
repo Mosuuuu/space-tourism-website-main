@@ -69,8 +69,36 @@ h5 {
     height: 382px;
     width: 450px;
 }
-.Landing-Button {
+.Landing-Hover {
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 504px;
+    left: 1300px;
+}
+.Landing-Hover:hover {
+    backdrop-filter: blur(10px);
+}
+.Landing-Circle {
+    height: 275px;
+    width: 275px;
+    border-radius: 50%;
+    background-color: #ffff;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Landing-Button {
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .star-icon {
     height: 50px;
@@ -84,7 +112,7 @@ h5 {
 .line-bg {
     background-color: rgb(255, 255, 255);
     height: 1px;
-    width: 900px;
+    width: 850px;
     position: absolute;
     top: 88px;
     left: 167px;
@@ -106,7 +134,7 @@ h5 {
     background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(80px);
     height: 96px;
-    width: 1100px;
+    width: 1020px;
     left: 900px;
     top: 40px;
 
