@@ -97,8 +97,17 @@ h5 {
 }
 .Landing-Button {
     font-size: 32px;
+    font-style:;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+a.two:link {
+    text-decoration: none;
+    color: black;
+}
+a.two:visited {
+    text-decoration: none;
+    color: black;
 }
 .star-icon {
     height: 50px;
@@ -127,7 +136,7 @@ h5 {
 }
 .menu-position {
     position: relative;
-    padding: 39px 165px 38px 110px;
+    padding: 39px 165px 38px 100px;
 }
 .menu-bg {
     position: absolute;
@@ -172,4 +181,26 @@ h5 {
     position: relative;
     display: inline;
     margin: 39px 24px 38px 24px;
+}
+a.one:link {
+    text-decoration: none;
+    color: #ffff;
+}
+a.one:visited {
+    text-decoration: none;
+    color: #ffff;
+}
+a.one:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -38px;
+}
+a.one:hover:after {
+    background-color: #979797;
+}
+a.one:active:after {
+    background-color: #ffff;
 }
