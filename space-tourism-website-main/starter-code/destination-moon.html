@@ -5,33 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Bellefair">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" 
+  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" 
+  rel="stylesheet">
+  <link rel="stylesheet" href="assets/CSS/styles.css">
+  <style>
+    body {
+     background-image: url("assets/destination/background-destination-desktop.jpg");
+     background-size:cover;
+     }
+   </style>
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <div class="star-icon"><img src="https://cdn-icons-png.flaticon.com/512/8369/8369316.png" 
+    alt="star-icon"
+    width="50px"
+    height="50px"></div>
+  <div class="line-bg"></div>
+  <div class="menu-bg"></div>
+  <div class="menu-box"> 
+    <div class="menu-position">
+      <div class="Home"> <a class="one" href="index.html"> <strong> 00 </strong>  HOME </a> </div>
+      <div class="Destination"> <a class="one" href="destination-moon.html"><strong> 01 </strong> DESTINATION</a> </div>
+      <div class="Crew"> <strong> <a class="one" href="crew-commander.html"> 02 </strong>  CREW</a> </div>
+      <div class="Technology"> <a class="one" href="technology-vehicle.html"><strong> 03 </strong>  TECHNOLOGY</a> </div>
+    </div>
+  </div>
 
-  01 Pick your destination
+  <h5 class="two"> <span style="color: #979797;"> <strong> 01 </strong> </span>  Pick your destination </h5>
 
-  Moon
-  Mars
-  Europa
-  Titan
+  <img class="Destination-image" src="assets/destination/image-moon.webp" alt="image-moon">
+  <div class="Destination-Box">
+    <div class="sub-menu-position">
+    <div class="sub-menu"> <a class="three" href="destination-moon.html">Moon</a> </div>
+      <div class="sub-menu">  <a class="three" href="destination-mars.html">Mars</a> </div>
+      <div class="sub-menu">  <a class="three" href="destination-europa.html">Europa</a> </div>
+      <div class="sub-menu"> <a class="three" href="destination-titan.html">Titan</a> </div>
+    </div>
 
-  Moon
+    <h2> Moon </h2> 
+    <p class="paragraph-2"> See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+    regain perspective and come back refreshed. While you’re there, take in some history 
+    by visiting the Luna 2 and Apollo 11 landing sites.
+    </p>
+    <hr class="dash">
+    <div class="distance-box">
+      <div class="Sub-heading-2"> Avg. distance </div>
+      <div class="Sub-heading-1"> 384,400 km</div>
+    </div>
+    <div class="traveltime-box">
+      <div class="Sub-heading-2">Est. travel time </div>
+      <div class="Sub-heading-1"> 3 days </div>
+    </div>
 
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
-
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
+</div>
 </body>
 </html>

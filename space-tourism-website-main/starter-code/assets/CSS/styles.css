@@ -15,6 +15,13 @@ h1 {
 h2 {
     font-family: 'Bellefair', serif;
     font-size: 100px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: #ffff;
+
+    position: relative;
+    margin-top: 71px;
+
 }
 h3 {
     font-family: 'Bellefair', serif;
@@ -24,7 +31,7 @@ h4 {
     font-family: 'Bellefair', serif;
     font-size: 32px;
 }
-h5 {
+h5.one {
     color: #D0D6F9;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 28px;
@@ -34,15 +41,87 @@ h5 {
     text-transform: uppercase;
     position: relative;
 }
+h5.two {
+    color: #ffff;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    line-height: 34px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 166.5px;
+    top: 212px;
+}
+a.one:link {
+    text-decoration: none;
+    color: #ffff;
+}
+a.one:visited {
+    text-decoration: none;
+    color: #ffff;
+}
+a.one:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -38px;
+}
+a.one:hover:after {
+    background-color: #979797;
+}
+a.one:active:after {
+    background-color: #ffff;
+}
+a.two:link {
+    text-decoration: none;
+    color: black;
+}
+a.two:visited {
+    text-decoration: none;
+    color: black;
+}
+a.three:link {
+    text-decoration: none;
+    color: #D0D6F9;
+}
+a.three:visited {
+    text-decoration: none;
+    color: #D0D6F9;
+}
+a.three:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 80%;
+    left: 0 ;
+    bottom: -5px;
+}
+a.three:active {
+    text-decoration: solid;
+    color: #ffff;
+}
+a.three:hover:after {
+    background-color: #979797;
+}
+a.three:active:after {
+    background-color: #ffff;
+}
 /*******************Class Style*******************/
 .Sub-heading-1 {
     font-family: 'Bellefair', serif;
     font-size: 28px;
+    color: #ffff;
+    text-transform: uppercase;
 }
 .Sub-heading-2 {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 14px;
     letter-spacing: 2,35;
+    color: #D0D6F9;
+    text-transform: uppercase;
 }
 .Sub-heading-3 {
     font-family: 'Barlow Condensed', sans-serif;
@@ -56,12 +135,26 @@ h5 {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 20px;
     font-style: normal;
-    font-weight:lighter;
     line-height: 32px;
     text-align: justify;
     position: relative;
     margin-bottom: 100px;
     letter-spacing: 1px;
+}
+.paragraph-2 {
+    color:rgba(208, 214, 249, 1);
+    width: 450px;
+    font-weight: lighter;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 32px;
+    text-align: justify;
+    letter-spacing: 1px;
+
+    position: relative;
+    margin: 14px 0px 54px 0px;
+    
 }
 .main-page-box {
     margin-top: 387px;
@@ -97,17 +190,8 @@ h5 {
 }
 .Landing-Button {
     font-size: 32px;
-    font-style:;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-a.two:link {
-    text-decoration: none;
-    color: black;
-}
-a.two:visited {
-    text-decoration: none;
-    color: black;
 }
 .star-icon {
     height: 50px;
@@ -126,6 +210,10 @@ a.two:visited {
     top: 88px;
     left: 167px;
     z-index: 1;
+}
+.dash {
+    border: 1px solid #383B4B;
+    border-bottom: none;
 }
 .menu-box {
     position: absolute;
@@ -149,6 +237,33 @@ a.two:visited {
 
     filter: blur(8px);
     -webkit-filter: blur(8px);
+}
+.sub-menu-position {
+    height: 34px;
+    width: 285.5px;
+    display: inline-flex;
+}
+.sub-menu {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: #ffff;
+    
+    position: relative;
+    height: 34px;
+    width: 285.5px;
+    justify-content: space-around;
+    display: flex;
+}
+.distance-box {
+    height: 61px;
+    width: 143px;
+   
+}
+.traveltime-box {
+    display: inline-block;
 }
 .Home {
     font-family: 'Barlow Condensed', sans-serif;
@@ -182,25 +297,19 @@ a.two:visited {
     display: inline;
     margin: 39px 24px 38px 24px;
 }
-a.one:link {
-    text-decoration: none;
-    color: #ffff;
-}
-a.one:visited {
-    text-decoration: none;
-    color: #ffff;
-}
-a.one:after {
-    content: "";
+.Destination-image {
+    height: 445px;
+    width: 445px;
+    
     position: absolute;
-    height: 3px;
-    width: 100%;
-    left: 0;
-    bottom: -38px;
+    left: 230px;
+    bottom: 112px ;
 }
-a.one:hover:after {
-    background-color: #979797;
-}
-a.one:active:after {
-    background-color: #ffff;
+.Destination-Box {
+    height: 445px;
+    width: 472px;
+
+    position: absolute;
+    top: 310px;
+    left: 832px;
 }
