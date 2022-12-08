@@ -106,8 +106,22 @@ a.one:after {
 a.one:hover:after {
     background-color: #979797;
 }
-a.one:active:after {
+a.one-active:link {
+    text-decoration: none;
+    color: #ffff;
+}
+a.one-active:visited {
+    text-decoration: none;
+    color: #ffff;
+}
+a.one-active:after {
+    content: "";
+    position: absolute;
     background-color: #ffff;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -38px;
 }
 a.two:link {
     text-decoration: none;
@@ -142,6 +156,23 @@ a.three:hover:after {
 }
 a.three:active:after {
     background-color: #ffff;
+}
+a.three-active:link {
+    text-decoration: none;
+    color: #ffff;
+}
+a.three-active:visited {
+    text-decoration: none;
+    color: #ffff;
+}
+a.three-active::after {
+    content: "";
+    background-color: #ffff;
+    position: absolute;
+    height: 3px;
+    width: 80%;
+    left: 0 ;
+    bottom: -5px;
 }
 a.four:link {
     background-color: #ffff;
@@ -421,6 +452,12 @@ a.five:link {
     background-color: #979797;
     border-radius: 50%;
 }
+.dot-active {
+    height: 15px;
+    width: 15px;
+    background-color: #ffff;
+    border-radius: 50%;
+}
 .technology-box {
     height: 303px;
     width: 470px;
@@ -461,10 +498,23 @@ a.five:link {
     bottom: 181px;
     left: 165px;
 }
-.circle:active {
-    color: black;
+.circle-active {
+    width: 80px;
+    height: 80px;
+    color: #000;
     background-color: #ffff;
-    border: 1px solid black;
+    font-size: 32px;
+    font-family: 'Bellefair', serif;
+
+    border-radius: 50%;
+    border: 1px solid #979797 ;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 .circle:hover {
     border: 2px solid #ffff;
