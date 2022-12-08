@@ -13,6 +13,8 @@ h1 {
     margin-bottom: 0;
 }
 h2 {
+    height: 115px;
+    width: 333px;
     font-family: 'Bellefair', serif;
     font-size: 100px;
     font-weight: lighter;
@@ -20,7 +22,8 @@ h2 {
     color: #ffff;
 
     position: relative;
-    margin-top: 71px;
+    margin-top: 37px;
+    margin-bottom: 14px;
 
 }
 h3 {
@@ -154,7 +157,6 @@ a.three:active:after {
 
     position: relative;
     margin: 14px 0px 54px 0px;
-    
 }
 .main-page-box {
     margin-top: 387px;
@@ -259,11 +261,16 @@ a.three:active:after {
 }
 .distance-box {
     height: 61px;
-    width: 143px;
-   
+    width: 153px;
+
 }
 .traveltime-box {
-    display: inline-block;
+    height: 61px;
+    width: 144px;
+
+    position: absolute;
+    top: 390px;
+    left: 222px;
 }
 .Home {
     font-family: 'Barlow Condensed', sans-serif;
@@ -306,8 +313,8 @@ a.three:active:after {
     bottom: 112px ;
 }
 .Destination-Box {
-    height: 445px;
-    width: 472px;
+    height: 472px;
+    width: 445px;
 
     position: absolute;
     top: 310px;
