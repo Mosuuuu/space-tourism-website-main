@@ -29,10 +29,26 @@ h2 {
 h3 {
     font-family: 'Bellefair', serif;
     font-size: 56px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: #ffff;
+
+    display: flex;
+    position: absolute;
+    top: 452px;
+    left: 165.5px;
+
 }
 h4 {
     font-family: 'Bellefair', serif;
     font-size: 32px;
+    font-weight: lighter;
+    text-transform: uppercase;
+
+    display: flex;
+    position: absolute;
+    top: 400px;
+    left: 165.5px;
 }
 h5.one {
     color: #D0D6F9;
@@ -112,6 +128,13 @@ a.three:hover:after {
 a.three:active:after {
     background-color: #ffff;
 }
+a.four:link {
+    background-color: #979797;
+    border-radius: 50%;
+}
+a.four:active {
+    background-color: #ffff;
+}
 /*******************Class Style*******************/
 .Sub-heading-1 {
     font-family: 'Bellefair', serif;
@@ -157,6 +180,24 @@ a.three:active:after {
 
     position: relative;
     margin: 14px 0px 54px 0px;
+}
+.paragraph-3 {
+    color:rgba(208, 214, 249, 1);
+    font-weight: lighter;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 32px;
+    text-align: justify;
+    letter-spacing: 1px;
+
+    position: absolute;
+    display: flex;
+    margin-top: 60px;
+    height: 128px;
+    width: 444px;
+    top: 543px;
+    left: 165px;
 }
 .main-page-box {
     margin-top: 387px;
@@ -319,4 +360,25 @@ a.three:active:after {
     position: absolute;
     top: 310px;
     left: 832px;
+}
+.Crew-image {
+    position: absolute;
+    right: 180px;
+    bottom: 10px;
+}
+.dot-position {
+    height: 15px;
+    width: 132px;
+    display: inline-flex;
+    justify-content: space-around;
+
+    position: absolute;
+    left: 167px;
+    bottom: 94px;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #979797;
+    border-radius: 50%;
 }
