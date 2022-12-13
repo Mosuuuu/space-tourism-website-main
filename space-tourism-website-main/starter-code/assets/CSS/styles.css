@@ -1,94 +1,97 @@
-/*******************Tagging Style*******************/
-body {
-    background-image: url("assets/home/background-home-desktop.jpg");
-    display: block;
-}
-h1 {
-    font-family: 'Bellefair', serif;
-    font-size: 150px;
-    font-weight: normal;
-    color: #ffff;
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-h2 {
-    height: 115px;
-    width: 333px;
-    font-family: 'Bellefair', serif;
-    font-size: 100px;
-    font-weight: lighter;
-    text-transform: uppercase;
-    color: #ffff;
+.container {
+  width: 96%;
+  height: 96px;
+  border: 1px solid white;
 
-    position: relative;
-    margin-top: 37px;
-    margin-bottom: 14px;
-
+  position: absolute;
+  right: 0px;
+  padding-top: 40px;
 }
-h3 {
-    font-family: 'Bellefair', serif;
-    font-size: 56px;
-    font-weight: lighter;
-    text-transform: uppercase;
-    color: #ffff;
+@media (max-width: 768px) {
+  .container {
+    width: 94%;
 
-    display: flex;
     position: absolute;
-    top: 452px;
-    left: 165.5px;
-}
-h3.two {
-    font-family: 'Bellefair', serif;
-    font-size: 56px;
-    font-weight: lighter;
-    text-transform: uppercase;
-    color: #ffff;
-
-    position: relative;
-    display: inline-block;
+    margin: 0px;
+    right: 0px;
     top: 0px;
-    left: 0px;
-    margin-top: 11px;
-    margin-bottom: 17px;
+    padding-top: 0px;
+  }
 }
-h4 {
-    font-family: 'Bellefair', serif;
-    font-size: 32px;
-    font-weight: lighter;
-    text-transform: uppercase;
+@media (max-width: 375px) {
+  .container {
+    width: 67%;
+    height: 667px;
 
-    display: flex;
     position: absolute;
-    top: 400px;
-    left: 165.5px;
+    top: 0px;
+    right: 0px;
+    left: 124px;
+  }
 }
-h5.one {
-    color: #D0D6F9;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 28px;
-    font-weight: lighter;
-    letter-spacing: 5px;
-    line-height: 34px;
-    text-transform: uppercase;
-    
-    position: relative;
+.navbar-bg {
+  width: 57%;
+  height: 96px;
+
+  position: absolute;
+  display: inline;
+  right: 0px;
 }
-h5.two {
-    color: #ffff;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 28px;
-    font-weight: lighter;
-    letter-spacing: 5px;
-    line-height: 34px;
-    text-transform: uppercase;
-    
+@media (max-width: 1904px) {
+  .navbar-bg {
+    backdrop-filter: blur(40.7742px);
+  }
+}
+@media (max-width: 768px) {
+  .navbar-bg {
+    width: 61%;
+    background-color: #161616;
+  }
+}
+@media (max-width: 375px) {
+  .navbar-bg {
+    width: 254px;
+    height: 667px;
+    background-color: transparent;
+    backdrop-filter: blur(40.7742px);
+
     position: absolute;
-    left: 166.5px;
-    top: 212px;
+    right: 0px;
+  }
 }
-@media (min-width:400px) {
-    h5.two {
-        color
-    }
+.nav-list {
+  width: 65%;
+  margin: 39px 20% 38px 14%;
+  justify-content: space-around;
+  display: flex;
+}
+.nav-item {
+  display: inline-flex;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2.7px;
+}
+a.menu:link {
+  text-decoration: none;
+  font-weight: lighter;
+  color: #ffff;
+}
+a.menu:visited {
+  text-decoration: none;
+  font-weight: lighter;
+  color: #ffff;
+}
+#invisible {
+  visibility: visible;
+}
+@media (max-width: 768px) {
+  #invisible {
+    visibility: hidden;
+  }
+}
+@media (max-width: 375px) {
+  #invisible {
+    visibility: visible;
+  }
 }

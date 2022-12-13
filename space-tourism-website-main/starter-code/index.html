@@ -12,29 +12,44 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" 
   rel="stylesheet">
   <link rel="stylesheet" href="assets/CSS/styles.css">
+
   <style>
     body {
      background-image: url("assets/home/background-home-desktop.jpg");
      background-size:cover;
      }
+     @media (max-width:768px) {
+      body {
+        background-image: url("assets/home/background-home-tablet.jpg");
+        background-size: cover;
+      }
+     }
+     @media (max-width:375px) {
+      body {
+        background-image: url("assets/home/background-home-mobile.jpg");
+        background-size: cover;
+      }
+     }
    </style>
-  <title>Frontend Mentor | Space tourism website</title>
+  <title>Yoga Maulidi | Space tourism website</title>
 </head>
+
 <body>
   <nav class="navbar">
-    <div class="container-fluid"> 
+    <div class="container">
       <button class="navbar-toggler" type="button"> </button>
       <span class="navbar-toggler-icon"></span>
       <div class="navbar-bg"> 
-        <ul>
-          <li class="navbar"> <a class="menu" href="index.html"><strong> 01 </strong>  home </a> </li>
-          <li class="navbar"> <a class="menu" href="destination-moon.html"><strong> 02 </strong>  destination</a> </li>
-          <li class="navbar"> <a class="menu" href="crew-commander.html"><strong> 03 </strong>  crew</a> </li>
-          <li class="navbar"> <a class="menu" href="technology-vehicle.html"><strong> 04 </strong>  technology</a> </li>
+        <ul class="nav-list">
+          <li class="nav-item"> <a class="menu" href="index.html"><strong id="invisible"> 01 </strong>  home </a> </li>
+          <li class="nav-item"> <a class="menu" href="destination-moon.html"><strong id="invisible"> 02 </strong>  destination</a> </li>
+          <li class="nav-item"> <a class="menu" href="crew-commander.html"><strong id="invisible"> 03 </strong>  crew</a> </li>
+          <li class="nav-item"> <a class="menu" href="technology-vehicle.html"><strong id="invisible"> 04 </strong>  technology</a> </li>
         </ul>
       </div>
     </div>
   </nav>
+
 
   <div class="main-page-box"> 
   <h5 class="one"> So, you want to travel to </h5>
