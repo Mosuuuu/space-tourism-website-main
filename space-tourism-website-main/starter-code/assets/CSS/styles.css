@@ -1,11 +1,10 @@
 .container {
   width: 96%;
   height: 96px;
-  border: 1px solid white;
 
   position: absolute;
   right: 0px;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 @media (max-width: 768px) {
   .container {
@@ -20,13 +19,12 @@
 }
 @media (max-width: 375px) {
   .container {
-    width: 67%;
-    height: 667px;
+    width: 375px;
+    height: 88px;
 
     position: absolute;
     top: 0px;
     right: 0px;
-    left: 124px;
   }
 }
 .navbar-bg {
@@ -36,16 +34,55 @@
   position: absolute;
   display: inline;
   right: 0px;
+  top: 0px;
 }
-@media (max-width: 1904px) {
+@media (min-width: 768px) {
   .navbar-bg {
     backdrop-filter: blur(40.7742px);
+  }
+  .nav-list {
+    width: 65%;
+    margin: 39px 20% 38px 14%;
+    display: flex;
+  }
+  .nav-img {
+    width: 50px;
+    height: 50px;
+
+    left: 0px;
+    top: 1px;
+  }
+  .nav-line {
+    width: 1000px;
+    height: 0.3px;
+    background-color: #979797;
+
+    position: absolute;
+    left: 80px;
+    top: 47px;
   }
 }
 @media (max-width: 768px) {
   .navbar-bg {
     width: 61%;
-    background-color: #161616;
+    background-color: rgba(255, 255, 255, 0.04);
+  }
+  .nav-list {
+    width: 356px;
+    margin: 39px 46px 0px 48px;
+    padding: 0px;
+    position: relative;
+    display: flex;
+  }
+  .nav-item {
+    font-size: 0.875em;
+  }
+  .nav-img {
+    width: 48px;
+    height: 48px;
+
+    top: 24px;
+    left: 0px;
   }
 }
 @media (max-width: 375px) {
@@ -56,14 +93,26 @@
     backdrop-filter: blur(40.7742px);
 
     position: absolute;
-    right: 0px;
+  }
+  .nav-list {
+    width: 130px;
+    display: block;
+
+    margin-top: 118px;
+  }
+  .nav-item {
+    margin-top: 16px;
+  }
+  .nav-img {
+    width: 40px;
+    height: 40px;
+
+    top: 24px;
+    left: 24px;
   }
 }
 .nav-list {
-  width: 65%;
-  margin: 39px 20% 38px 14%;
   justify-content: space-around;
-  display: flex;
 }
 .nav-item {
   display: inline-flex;
@@ -72,6 +121,13 @@
   font-weight: lighter;
   letter-spacing: 2.7px;
 }
+.nav-img {
+  border-radius: 50%;
+  background-color: #ffff;
+
+  position: relative;
+}
+
 a.menu:link {
   text-decoration: none;
   font-weight: lighter;
