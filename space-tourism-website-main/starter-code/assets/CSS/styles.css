@@ -1,4 +1,68 @@
-.container {
+/* Text - Setting (General) */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bellefair", serif;
+  color: #ffff;
+}
+h5,
+body {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #d0d6f9;
+}
+
+body,
+.sub-heading2 {
+  letter-spacing: 2.35px;
+}
+
+.nav-text {
+  letter-spacing: 2.7px;
+  text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.sub-heading1,
+.sub-heading2,
+.nav-text,
+body {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.sub-heading1,
+.sub-heading2,
+.nav-text {
+  text-transform: uppercase;
+}
+
+/* Text - Settings (Dekstop) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 150px;
+  }
+  h5 {
+    font-size: 28px;
+    letter-spacing: 4.75px;
+  }
+}
+/* Text - Settings (Tab) */
+
+/* Text -Settings (Mobile) */
+
+/****** Nav-bar Settings ******/
+/* Nav-bar Container */
+.container-navbar {
   width: 96%;
   height: 96px;
 
@@ -7,7 +71,7 @@
   padding-top: 20px;
 }
 @media (max-width: 768px) {
-  .container {
+  .container-navbar {
     width: 94%;
 
     position: absolute;
@@ -18,7 +82,7 @@
   }
 }
 @media (max-width: 375px) {
-  .container {
+  .container-navbar {
     width: 375px;
     height: 88px;
 
@@ -149,5 +213,27 @@ a.menu:visited {
 @media (max-width: 375px) {
   #invisible {
     visibility: visible;
+  }
+}
+/****** Main-menu Content ******/
+/* Main-menu Container*/
+@media (min-width: 768px) {
+  .container-main-menu {
+    width: 450px;
+    height: 382px;
+
+    position: absolute;
+    bottom: 131px;
+    left: 165px;
+  }
+  .container-h5-main-menu {
+    margin-top: 0px;
+    margin-left: 0.5px;
+  }
+  .container-h1-main-menu {
+    margin: 24px 0px;
+  }
+  .container-p-main-menu {
+    line-height: 32px;
   }
 }
