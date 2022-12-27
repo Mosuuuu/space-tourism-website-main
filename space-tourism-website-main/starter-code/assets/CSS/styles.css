@@ -46,6 +46,12 @@ h5,
   text-transform: uppercase;
 }
 
+.main-menu-button {
+  font-family: "Bellefair", serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 /* Text - Settings (Dekstop) */
 @media (min-width: 768px) {
   h1 {
@@ -91,6 +97,23 @@ h5,
     right: 0px;
   }
 }
+/* Nav-bar Menu */
+.nav-list {
+  justify-content: space-around;
+}
+.nav-item {
+  display: inline-flex;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2.7px;
+}
+.nav-img {
+  border-radius: 50%;
+  background-color: #ffff;
+
+  position: relative;
+}
 .navbar-bg {
   width: 57%;
   height: 96px;
@@ -100,6 +123,7 @@ h5,
   right: 0px;
   top: 0px;
 }
+/* Navbar Menu (Dekstop) */
 @media (min-width: 768px) {
   .navbar-bg {
     backdrop-filter: blur(40.7742px);
@@ -117,15 +141,29 @@ h5,
     top: 1px;
   }
   .nav-line {
-    width: 1000px;
+    width: 850px;
     height: 0.3px;
     background-color: #979797;
 
     position: absolute;
     left: 80px;
     top: 47px;
+    z-index: 1;
+  }
+  a.nav-menu:after {
+    height: 3px;
+    width: 100%;
+
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -38px;
+  }
+  a.nav-menu:after:hover {
+    background-color: #979797;
   }
 }
+/* Navbar Menu (Tab) */
 @media (max-width: 768px) {
   .navbar-bg {
     width: 61%;
@@ -149,6 +187,7 @@ h5,
     left: 0px;
   }
 }
+/* Navbar Menu (Mobile) */
 @media (max-width: 375px) {
   .navbar-bg {
     width: 254px;
@@ -175,29 +214,10 @@ h5,
     left: 24px;
   }
 }
-.nav-list {
-  justify-content: space-around;
-}
-.nav-item {
-  display: inline-flex;
-  text-transform: uppercase;
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: lighter;
-  letter-spacing: 2.7px;
-}
-.nav-img {
-  border-radius: 50%;
-  background-color: #ffff;
 
-  position: relative;
-}
-
-a.menu:link {
-  text-decoration: none;
-  font-weight: lighter;
-  color: #ffff;
-}
-a.menu:visited {
+/* Navbar (Style) */
+a.nav-menu:link,
+a.nav-menu:visited {
   text-decoration: none;
   font-weight: lighter;
   color: #ffff;
@@ -215,6 +235,7 @@ a.menu:visited {
     visibility: visible;
   }
 }
+
 /****** Main-menu Content ******/
 /* Main-menu Container*/
 @media (min-width: 768px) {
@@ -236,4 +257,51 @@ a.menu:visited {
   .container-p-main-menu {
     line-height: 32px;
   }
+}
+/****** Main-menu Hover ******/
+/* Container Hover */
+@media (min-width: 768px) {
+  .container-main-menu-hover {
+    width: 450px;
+    height: 450px;
+
+    position: absolute;
+    right: 77px;
+    bottom: 43px;
+  }
+}
+/* Main-menu Hover */
+@media (min-width: 768px) {
+  .main-menu-hover {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+  }
+  .main-menu-hover:hover {
+    backdrop-filter: blur(10px);
+  }
+  .main-menu-button {
+    width: 274px;
+    height: 274px;
+  }
+}
+.main-menu-button {
+  border-radius: 50%;
+  background-color: #ffff;
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+a.main-menu-button-hover:visited,
+a.main-menu-button-hover:active,
+a.main-menu-button-hover:link {
+  text-decoration: none;
+  color: black;
 }
