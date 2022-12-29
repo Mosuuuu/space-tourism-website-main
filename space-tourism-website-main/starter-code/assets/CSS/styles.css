@@ -78,7 +78,22 @@ h5,
 }
 
 /* Text -Settings (Mobile) */
-
+@media (max-width: 375px) {
+  h1,
+  h5,
+  body {
+    text-align: center;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  body {
+    font-size: 15px;
+  }
+}
 /****** Nav-bar Settings ******/
 /* Nav-bar Container */
 .container-navbar {
@@ -108,6 +123,7 @@ h5,
     position: absolute;
     top: 0px;
     right: 0px;
+    z-index: 1;
   }
 }
 /* Nav-bar Menu */
@@ -217,6 +233,7 @@ h5,
     backdrop-filter: blur(40.7742px);
 
     position: absolute;
+    z-index: 1;
   }
   .nav-list {
     width: 130px;
@@ -232,7 +249,8 @@ h5,
     height: 40px;
 
     top: 24px;
-    left: 24px;
+    left: -144px;
+    right: auto;
   }
 }
 
@@ -302,6 +320,17 @@ a.nav-menu-active {
     line-height: 20px;
   }
 }
+/* Main-menu Container (Mobile) */
+@media (max-width: 375px) {
+  .container-main-menu {
+    width: 327px;
+    height: 276px;
+
+    top: 112px;
+    left: 24px;
+  }
+}
+
 /****** Main-menu Hover ******/
 /* Container Hover */
 .container-main-menu-hover {
@@ -325,6 +354,16 @@ a.nav-menu-active {
 
     right: 263px;
     bottom: 90px;
+  }
+}
+/*Container Hover (Mobile) */
+@media (max-width: 375px) {
+  .container-main-menu-hover {
+    width: 150px;
+    height: 150px;
+
+    bottom: 48px;
+    right: 112px;
   }
 }
 /* Main-menu Hover */
@@ -353,6 +392,13 @@ a.nav-menu-active {
   .main-menu-button {
     width: 242px;
     height: 242px;
+  }
+}
+/* Main-menu Hover (Mobile) */
+@media (max-width: 375px) {
+  .main-menu-button {
+    width: 150px;
+    height: 150px;
   }
 }
 .main-menu-button {
