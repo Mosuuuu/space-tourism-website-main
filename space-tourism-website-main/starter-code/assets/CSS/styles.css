@@ -12,7 +12,15 @@ body {
   font-family: "Barlow Condensed", sans-serif;
   color: #d0d6f9;
 }
-
+#sub-menu-h5-numb {
+  color: #ffff;
+  font-weight: 700;
+  mix-blend-mode: normal;
+  opacity: 0.2;
+}
+#sub-menu-h5-txt {
+  color: #ffff;
+}
 body,
 .sub-heading2 {
   letter-spacing: 2.35px;
@@ -416,3 +424,4 @@ a.main-menu-button-hover:link {
   text-decoration: none;
   color: black;
 }
+/** Sub-menu Content (Destination) **/
